@@ -22,10 +22,10 @@ set :repo_url, 'git@github.com:namwoody/deploy_test.git'
 # Default value for :pty is false
 # set :pty, true
 
-
+set :bundle_binstubs, nil
 
 set :linked_files, %w{config/database.yml}
-set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 
 
