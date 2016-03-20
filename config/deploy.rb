@@ -26,7 +26,7 @@ set :bundle_binstubs, nil
 
 set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
-
+set :linked_files, fetch(:linked_files, []).push('config/secrets.yml')
 
 
 # Default value for :linked_files is []
