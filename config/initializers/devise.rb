@@ -1,1 +1,1 @@
-Devise.secret_key = <%= ENV["DEVISE_KEY"] %>
+# Devise.secret_key = <%= ENV["DEVISE_KEY"] %>
