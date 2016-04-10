@@ -14,9 +14,9 @@ Spree.config do |config|
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
 
-config.override_actionmailer_config = true
-  config.enable_mail_delivery = true
-config.mails_from = "deepsarora262@gmail.com"
+#config.override_actionmailer_config = true
+  #config.enable_mail_delivery = true
+#config.mails_from = "deepsarora262@gmail.com"
 
 end
 
