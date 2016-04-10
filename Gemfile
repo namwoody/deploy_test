@@ -61,6 +61,25 @@ gem 'spree', '3.0.4'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
 
+gem 'spree_address_book', github: 'spree-contrib/spree_address_book', branch: '3-0-stable'
+gem 'spree_wishlist', github: 'spree-contrib/spree_wishlist', branch: '3-0-stable'
+gem 'spree_email_to_friend', github: 'spree-contrib/spree_email_to_friend', branch: '3-0-stable'
+gem 'spree_print_invoice', github: 'spree-contrib/spree_print_invoice', branch: '3-0-stable'
+
+gem 'spree_social', github: 'spree-contrib/spree_social', branch: '3-0-stable'
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '3-0-stable'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: '3-0-stable'
+ gem 'spree_reviews', github: 'spree-contrib/spree_reviews', branch: '3-0-stable'
+ gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us', branch: '3-0-stable'
+
+ gem "spree_product_zoom", :git => "git://github.com/spree/spree_product_zoom.git", branch: '3-0-stable'
+
+gem 'spree_related_products', github: 'spree-contrib/spree_related_products', branch: '3-0-stable'
+
+
+
+
+
 
 
 

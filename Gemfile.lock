@@ -1,4 +1,94 @@
 GIT
+  remote: git://github.com/spree-contrib/spree_address_book.git
+  revision: 389c8218b07bf85f4dbf89f05d33f89b2e2f0177
+  branch: 3-0-stable
+  specs:
+    spree_address_book (3.0.1)
+      spree_auth_devise
+      spree_core (~> 3.0.0.rc)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_contact_us.git
+  revision: 4089e70ef39e0a5f7e48fc505abec2259e0afbfc
+  branch: 3-0-stable
+  specs:
+    spree_contact_us (2.2.0)
+      spree_core (~> 3.0.0)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_email_to_friend.git
+  revision: bada2e955ed63704867a186d3dd0e469ff8b8004
+  branch: 3-0-stable
+  specs:
+    spree_email_to_friend (1.3.0)
+      recaptcha (>= 0.3.1)
+      spree_core (~> 3.0.0.rc2)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_mail_settings.git
+  revision: d416a1e355893bda625ed5bea187d39526aa52f9
+  branch: 3-0-stable
+  specs:
+    spree_mail_settings (3.0.0)
+      spree_backend (~> 3.0.0)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_print_invoice.git
+  revision: d59b21a8e4b5c2f57385074c9a49bfeb2498f4f0
+  branch: 3-0-stable
+  specs:
+    spree_print_invoice (3.0.0.beta)
+      prawn (~> 1.0.0)
+      spree_core (~> 3.0.0)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_related_products.git
+  revision: 0fdb345315be15c66a706e419e5d153ff07850b3
+  branch: 3-0-stable
+  specs:
+    spree_related_products (3.2.0)
+      spree_backend (~> 3.0.0)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_reviews.git
+  revision: 664ed28313dca469ee39e7ca6ba9a6ac0df0d4eb
+  branch: 3-0-stable
+  specs:
+    spree_reviews (3.0.0.beta)
+      spree_core (~> 3.0.0)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_social.git
+  revision: 1ba6a7dfb5ee1021422c09e740d5b312551b6272
+  branch: 3-0-stable
+  specs:
+    spree_social (3.0.0.rc4)
+      oa-core
+      omniauth
+      omniauth-amazon
+      omniauth-facebook
+      omniauth-github
+      omniauth-google-oauth2
+      omniauth-twitter
+      spree_core (~> 3.0.0.rc4)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_static_content.git
+  revision: 80a74e1ad8e1843c6bfabcd700dc8edb84822fdd
+  branch: 3-0-stable
+  specs:
+    spree_static_content (3.0.1)
+      spree_core (~> 3.0.0)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_wishlist.git
+  revision: 07520b0a69a4f27e829810ca76cfd2a801ef5571
+  branch: 3-0-stable
+  specs:
+    spree_wishlist (2.2.0)
+      spree_core (~> 3.0.0)
+
+GIT
   remote: git://github.com/spree/spree_auth_devise.git
   revision: 145a06354a39a7ceeea4ad93e39c63c1ecb13c52
   branch: 3-0-stable
@@ -16,6 +106,14 @@ GIT
   branch: 3-0-stable
   specs:
     spree_gateway (3.0.0)
+      spree_core (~> 3.0.0)
+
+GIT
+  remote: git://github.com/spree/spree_product_zoom.git
+  revision: d0ae27ccf1946da8c0898d4dd16b6bab52beec9a
+  branch: 3-0-stable
+  specs:
+    spree_product_zoom (3.0)
       spree_core (~> 3.0.0)
 
 GEM
@@ -134,6 +232,8 @@ GEM
       devise (>= 2.1.0)
     erubis (2.7.0)
     execjs (2.6.0)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
     ffaker (1.32.1)
     font-awesome-rails (4.5.0.1)
       railties (>= 3.2, < 5.1)
@@ -141,6 +241,7 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    hashie (3.4.3)
     highline (1.6.21)
     htmlentities (4.3.4)
     httparty (0.13.7)
@@ -157,6 +258,7 @@ GEM
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
     json (1.8.3)
+    jwt (1.5.1)
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -174,11 +276,45 @@ GEM
       sixarm_ruby_unaccent (>= 1.1.1, < 2)
     multi_json (1.11.2)
     multi_xml (0.5.5)
+    multipart-post (2.0.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.1.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    oa-core (0.3.2)
+    oauth (0.5.1)
+    oauth2 (1.1.0)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 1.0, < 1.5.2)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (>= 1.2, < 3)
+    omniauth (1.3.1)
+      hashie (>= 1.2, < 4)
+      rack (>= 1.0, < 3)
+    omniauth-amazon (1.0.1)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-facebook (3.0.0)
+      omniauth-oauth2 (~> 1.2)
+    omniauth-github (1.1.2)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-google-oauth2 (0.4.0)
+      jwt (~> 1.5.0)
+      multi_json (~> 1.3)
+      omniauth (>= 1.1.1)
+      omniauth-oauth2 (>= 1.3.1)
+    omniauth-oauth (1.1.0)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-oauth2 (1.4.0)
+      oauth2 (~> 1.0)
+      omniauth (~> 1.2)
+    omniauth-twitter (1.2.1)
+      json (~> 1.3)
+      omniauth-oauth (~> 1.1)
     orm_adapter (0.5.0)
     paperclip (4.2.4)
       activemodel (>= 3.2.0)
@@ -187,10 +323,14 @@ GEM
       mime-types
     paranoia (2.1.5)
       activerecord (~> 4.0)
+    pdf-core (0.2.5)
     pg (0.18.4)
     polyamorous (1.3.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
+    prawn (1.0.0)
+      pdf-core (~> 0.2.2)
+      ttfunk (~> 1.1.1)
     premailer (1.8.6)
       css_parser (>= 1.3.6)
       htmlentities (>= 4.0.0)
@@ -235,6 +375,8 @@ GEM
       polyamorous (~> 1.1)
     rdoc (4.2.2)
       json (~> 1.4)
+    recaptcha (1.2.0)
+      json
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
     sass (3.4.21)
@@ -329,6 +471,7 @@ GEM
     thread_safe (0.3.5)
     tilt (2.0.2)
     truncate_html (0.9.2)
+    ttfunk (1.1.1)
     turbolinks (2.5.3)
       coffee-rails
     twitter_cldr (3.2.1)
@@ -371,8 +514,19 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spree (= 3.0.4)
+  spree_address_book!
   spree_auth_devise!
+  spree_contact_us!
+  spree_email_to_friend!
   spree_gateway!
+  spree_mail_settings!
+  spree_print_invoice!
+  spree_product_zoom!
+  spree_related_products!
+  spree_reviews!
+  spree_social!
+  spree_static_content!
+  spree_wishlist!
   spring
   sqlite3
   turbolinks

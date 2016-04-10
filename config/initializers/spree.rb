@@ -17,6 +17,6 @@ end
 
 
 Spree::Config.set(logo: "logo.png")
-
+Spree::PrintInvoice::Config.set(logo_path: 'app/assets/images/logo.png')
 
 Spree.user_class = "Spree::User"
