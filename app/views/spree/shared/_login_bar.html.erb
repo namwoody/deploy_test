@@ -5,6 +5,7 @@
   
 <% else %>
 
-  <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
+  <li id="link-to-login"  data-toggle="modal" data-target="#loginModal">
+  <%= link_to Spree.t(:login), spree.login_path %></li>
 
 <% end %>

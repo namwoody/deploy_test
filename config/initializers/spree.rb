@@ -13,15 +13,6 @@ Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
-
-#config.override_actionmailer_config = true
-  #config.enable_mail_delivery = true
-#config.mails_from = "deepsarora262@gmail.com"
-
 end
-
-
-Spree::Config.set(logo: "logo.png")
-Spree::PrintInvoice::Config.set(logo_path: 'app/assets/images/logo.png')
 
 Spree.user_class = "Spree::User"

@@ -9,5 +9,3 @@
 //= require spree/backend
 
 //= require_tree .
-//= require spree/backend/spree_print_invoice
-//= require spree/backend/spree_reviews
